@@ -21,7 +21,15 @@ int main() {
 
 
 
+Ques-02 Write a C++ program that takes five grades (integers) as input from the user and calculates the average grade. Output the average grade to the user.
 
+Sample Input:- Enter grade 1: 85
+Enter grade 2: 90
+Enter grade 3: 78
+Enter grade 4: 92
+Enter grade 5: 88
+
+Sample Output:- The average grade is: 86.6
 
 
 
@@ -42,3 +50,13 @@ int main(){
     cin>>e;
     cout<<(a+b+c+d+e)*0.2<<endl;
 }
+
+
+
+
+
+Ques- 03 Write a C++ program that takes an integer as input from the user and outputs its square.
+
+Sample Input:- Enter a number: 7
+
+Sample Output :- The square of 7 is: 49
