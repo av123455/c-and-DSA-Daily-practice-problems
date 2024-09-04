@@ -78,3 +78,36 @@ Number of consonants: 9
 
 
 
+
+#include <iostream>
+#include <string>
+#include <algorithm>
+using namespace std;
+
+void cntVowCon(const string &str) {
+    int vowels = 0, consonants = 0;
+    string lowerStr = str;
+
+    transform(lowerStr.begin(), lowerStr.end(), lowerStr.begin(), ::tolower);
+
+    for (char ch : lowerStr) {
+        if (ch == 'a' || ch == 'e' || ch == 'i' || ch == 'o' || ch == 'u') {
+            vowels++;
+        } else if (ch >= 'a' && ch <= 'z') {
+            consonants++;
+        }
+    }
+
+    cout << "Number of vowels: " << vowels << endl;
+    cout << "Number of consonants: " << consonants << endl;
+}
+
+int main() {
+    string input;
+    cout << "Enter a string: ";
+    getline(cin, input);
+
+    cntVowCon(input);
+
+    return 0;
+}
