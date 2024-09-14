@@ -1,0 +1,19 @@
+Write C++ program to demonstrate how to create dynamic variable using new keyword.
+
+
+
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    int* dynamicVar = new int;  
+    *dynamicVar = 42;
+
+    cout << "Value of dynamic variable: " << *dynamicVar << endl;
+    cout << "Address of dynamic variable: " << dynamicVar << endl;
+
+    delete dynamicVar;
+
+    return 0;
+}
