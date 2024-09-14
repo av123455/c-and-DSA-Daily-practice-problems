@@ -1,0 +1,40 @@
+Ques 1: Define a car class with properties brand name , model, engine, number of seats and method displaylnfo that display the
+all information of class.
+
+
+
+
+
+
+#include <iostream>
+using namespace std;
+
+class Car {
+private:
+    string brandName;
+    string model;
+    string engine;
+    int numberOfSeats;
+
+public:
+    Car(string brand, string model, string engine, int seats) {
+        brandName = brand;
+        this->model = model;
+        this->engine = engine;
+        numberOfSeats = seats;
+    }
+
+    void displayInfo() {
+        cout << "Brand Name: " << brandName << endl;
+        cout << "Model: " << model << endl;
+        cout << "Engine: " << engine << endl;
+        cout << "Number of Seats: " << numberOfSeats << endl;
+    }
+};
+
+int main() {
+    Car car1("Toyota", "Corolla", "1.8L 4-Cylinder", 5);
+    car1.displayInfo();
+
+    return 0;
+}
